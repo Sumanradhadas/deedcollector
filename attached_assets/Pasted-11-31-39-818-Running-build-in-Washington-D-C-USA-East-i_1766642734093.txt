@@ -1,0 +1,55 @@
+11:31:39.818 Running build in Washington, D.C., USA (East) – iad1
+11:31:39.819 Build machine configuration: 2 cores, 8 GB
+11:31:39.945 Cloning github.com/Sumanradhadas/deedcollector (Branch: main, Commit: 15e2f2c)
+11:31:39.945 Previous build caches not available.
+11:31:40.133 Cloning completed: 188.000ms
+11:31:40.515 Running "vercel build"
+11:31:40.957 Vercel CLI 50.1.3
+11:31:41.685 Installing dependencies...
+11:31:52.698 
+11:31:52.698 added 574 packages in 11s
+11:31:52.699 
+11:31:52.699 74 packages are looking for funding
+11:31:52.699   run `npm fund` for details
+11:31:52.982 
+11:31:52.984 > rest-express@1.0.0 build
+11:31:52.984 > tsx script/build.ts
+11:31:52.984 
+11:31:53.840 building client...
+11:31:53.916 [36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+11:31:54.182 transforming...
+11:31:54.948 [32m✓[39m 10 modules transformed.
+11:31:55.316 [31m✗[39m Build failed in 1.17s
+11:31:55.319 [31m[vite:load-fallback] Could not load /vercel/path0/client/src/pages/dashboard (imported by client/src/App.tsx): ENOENT: no such file or directory, open '/vercel/path0/client/src/pages/dashboard'[39m
+11:31:55.320     at async open (node:internal/fs/promises:642:25)
+11:31:55.320     at async Object.readFile (node:internal/fs/promises:1279:14)
+11:31:55.320     at async Object.handler (/vercel/path0/node_modules/vite/dist/node/chunks/config.js:33168:21)
+11:31:55.320     at async PluginDriver.hookFirstAndGetPlugin (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:22376:28)
+11:31:55.321     at async <anonymous> (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21376:33)
+11:31:55.321     at async Queue.work (/vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:22604:32) {
+11:31:55.321   errno: -2,
+11:31:55.321   code: 'PLUGIN_ERROR',
+11:31:55.321   syscall: 'open',
+11:31:55.321   path: '/vercel/path0/client/src/pages/dashboard',
+11:31:55.321   pluginCode: 'ENOENT',
+11:31:55.321   plugin: 'vite:load-fallback',
+11:31:55.321   hook: 'load',
+11:31:55.321   watchFiles: [
+11:31:55.322     '/vercel/path0/client/index.html',
+11:31:55.322     '/vercel/path0/client/src/main.tsx',
+11:31:55.322     '/vercel/path0/package.json',
+11:31:55.322     '/vercel/path0/node_modules/react/jsx-runtime.js',
+11:31:55.322     '/vercel/path0/node_modules/react-dom/client.js',
+11:31:55.322     '/vercel/path0/client/src/App.tsx',
+11:31:55.323     '/vercel/path0/client/src/index.css',
+11:31:55.323     '/vercel/path0/node_modules/react-dom/index.js',
+11:31:55.323     '/vercel/path0/node_modules/react/cjs/react-jsx-runtime.production.min.js',
+11:31:55.323     '/vercel/path0/node_modules/wouter/esm/index.js',
+11:31:55.323     '/vercel/path0/node_modules/@tanstack/react-query/build/modern/index.js',
+11:31:55.323     '/vercel/path0/client/src/lib/queryClient.ts',
+11:31:55.323     '/vercel/path0/client/src/components/ui/toaster.tsx',
+11:31:55.323     '/vercel/path0/client/src/components/ui/tooltip.tsx',
+11:31:55.323     '/vercel/path0/client/src/pages/not-found.tsx'
+11:31:55.324   ]
+11:31:55.324 }
+11:31:55.357 Error: Command "npm run build" exited with 1
